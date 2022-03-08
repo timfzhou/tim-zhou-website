@@ -28,7 +28,7 @@ article {
 article > header {
   grid-area: header;
   position: sticky;
-  align-self: start;
+  top: 0;
 
   border-bottom: 3px solid var(--primary);
 }
