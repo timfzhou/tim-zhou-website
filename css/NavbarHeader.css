@@ -83,10 +83,6 @@ nav {
   transition: 0.4s;
 }
 
-.hamburger:hover span:nth-child(2) {
-  transform: translateX(5px);
-}
-
 /* Animation for when hamburger button clicked */
 #hamburger-toggle:checked + div > label > span:nth-child(1) {
   transform: translate(2px, -6px) rotate(45deg);
@@ -134,5 +130,12 @@ nav {
   }
   .flex-nav-placeholder {
     flex: 1 1 25%;
+  }
+}
+
+/* Only allow hover animation on mouse-like primary input device */
+@media (hover: hover) {
+  .hamburger:hover span:nth-child(2) {
+    transform: translateX(5px);
   }
 }
