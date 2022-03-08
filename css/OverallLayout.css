@@ -1,0 +1,39 @@
+/* Variables */
+:root {
+  --primary: #8c38ff;
+  --light: #fff;
+  --dark: #212121;
+  --background: #fff;
+}
+
+/* Setting defaults for website */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira sans", sans-serif;
+}
+
+/* Overall grid for website */
+article {
+  height: 100vh;
+
+  /* grid container settings */
+  display: grid;
+  grid-template:
+    "header" auto
+    "main" 1fr
+    / 1fr;
+}
+article > header {
+  grid-area: header;
+  position: sticky;
+  align-self: start;
+
+  border-bottom: 3px solid var(--primary);
+}
+article > main {
+  grid-area: main;
+  overflow: auto;
+  padding: 1rem;
+}

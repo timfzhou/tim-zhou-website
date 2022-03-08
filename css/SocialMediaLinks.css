@@ -1,0 +1,183 @@
+/* Social media links */
+#social-media-flex-container {
+  display: flex;
+}
+#social-media-placeholder {
+  display: none;
+}
+#social-media {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: flex-end;
+  flex-basis: 100%;
+}
+/* instagram logo */
+.instagram {
+  width: 2rem;
+  height: 2rem;
+  border: 0.25rem solid var(--dark);
+  border-radius: 0.5rem;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.instagram::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 0.25rem solid var(--dark);
+  border-radius: 50%;
+  position: absolute;
+}
+.instagram::after {
+  content: "";
+  width: 0.1rem;
+  height: 0.1rem;
+  border: 0.08rem solid var(--dark);
+  border-radius: 50%;
+  background: var(--dark);
+  position: absolute;
+  top: 0.12rem;
+  right: 0.12rem;
+}
+
+/* twitter logo; source: https://codepen.io/moneyandspoils/pen/DwKyEr by Armando Lopez*/
+.twitter {
+  width: 2.509090909rem;
+  height: 2rem;
+  overflow: hidden;
+}
+
+.twitter-bird {
+  width: 5.818181818rem;
+  height: 5.818181818rem;
+  top: -2.603636364rem;
+  left: -2.363636364rem;
+  position: relative;
+}
+.twitter-bird > div {
+  width: 1.018181818rem;
+  height: 1.018181818rem;
+  background: var(--dark);
+  border-radius: 100%;
+  position: absolute;
+}
+.twitter-bird .twitter-tail-cut,
+.twitter-bird .twitter-feather-bottom-cut,
+.twitter-bird .twitter-feather-middle-cut,
+.twitter-bird .twitter-body-top-cut,
+.twitter-bird .twitter-mouth-bottom-cut,
+.twitter-bird .twitter-mouth-top-cut {
+  background: var(--background);
+}
+.twitter-bird .twitter-body {
+  width: 2.836363636rem;
+  height: 2.836363636rem;
+  top: 1.745454545rem;
+  left: 1.745454545rem;
+}
+
+.twitter-bird .twitter-tail-cut {
+  width: 2.072727273rem;
+  height: 2.072727273rem;
+  left: 1.44rem;
+  top: 2.290909091rem;
+}
+.twitter-bird .twitter-feather-bottom {
+  left: 2.661818182rem;
+  top: 3.127272727rem;
+}
+.twitter-bird .twitter-feather-bottom-cut {
+  left: 2.254545455rem;
+  top: 2.792727273rem;
+}
+.twitter-bird .twitter-feather-middle {
+  left: 2.501818182rem;
+  top: 2.778181818rem;
+}
+.twitter-bird .twitter-feather-middle-cut {
+  left: 2.181818182rem;
+  top: 2.327272727rem;
+}
+.twitter-bird .twitter-feather-top {
+  top: 2.436363636rem;
+  left: 2.509090909rem;
+}
+.twitter-bird .twitter-body-top-cut {
+  width: 2.836363636rem;
+  height: 2.836363636rem;
+  top: 0.378181818rem;
+  left: 2.254545455rem;
+}
+.twitter-bird .twitter-mouth-bottom {
+  width: 0.945454545rem;
+  height: 0.945454545rem;
+  top: 2.196363636rem;
+  left: 3.898181818rem;
+}
+.twitter-bird .twitter-mouth-bottom-cut {
+  width: 1.709090909rem;
+  height: 1.709090909rem;
+  top: 1.207272727rem;
+  left: 3.6rem;
+}
+.twitter-bird .twitter-mouth-top {
+  width: 0.945454545rem;
+  height: 0.945454545rem;
+  top: 2.029090909rem;
+  left: 3.832727273rem;
+}
+.twitter-bird .twitter-mouth-top-cut {
+  width: 1.709090909rem;
+  height: 1.709090909rem;
+  top: 1.069090909rem;
+  left: 3.432727273rem;
+}
+.twitter-bird .twitter-head {
+  width: 0.981818182rem;
+  height: 0.981818182rem;
+  top: 2.603636364rem;
+  left: 3.585454545rem;
+}
+
+/* Linkedin Logo */
+@import url("https://use.typekit.net/ksb1yui.css");
+.linkedin {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  border: 0.25rem solid var(--dark);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.linkedin::before {
+  content: "in";
+  font-size: 1.4rem;
+  font-family: myriad-pro, sans-serif;
+  font-weight: bold;
+  color: var(--dark);
+  text-decoration: none;
+  position: absolute;
+  left: 0.12rem;
+}
+
+@media (min-width: 768px) {
+  #social-media {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 3rem;
+  }
+  #social-media-placeholder {
+    flex-basis: 70%;
+    display: block;
+  }
+  .twitter,
+  .instagram,
+  .linkedin {
+    justify-self: flex-end;
+  }
+}

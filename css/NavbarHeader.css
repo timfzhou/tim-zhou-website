@@ -1,0 +1,138 @@
+nav {
+  background-color: var(--dark);
+  /* Top & bottom / Left & right */
+  padding: 16px 32px;
+}
+
+/* Flexbox in header */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sections of flexbox container in header. Settings for small width screens */
+.flex-hamburger {
+  flex: 1 1 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  order: 1;
+}
+.flex-logo {
+  flex: 1 1 70%;
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  order: 2;
+}
+.flex-menu {
+  display: none;
+  order: 3;
+}
+.flex-nav-placeholder {
+  flex: 1 1 15%;
+  order: 4;
+}
+.flex-hamburger-menu {
+  order: 5;
+
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  align-content: stretch;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+
+  transition: 0.5s;
+}
+
+/* Navigation on small width screens */
+#hamburger-toggle {
+  display: none;
+}
+.hamburger {
+  /* Can't highlight this button */
+  user-select: none;
+
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 1.875rem;
+  height: 0.1875rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+  position: relative;
+
+  background-color: var(--light);
+  border-radius: 6px;
+  z-index: 1;
+
+  /* Starts from top left of origin */
+  transform-origin: 0 0;
+
+  transition: 0.4s;
+}
+
+.hamburger:hover span:nth-child(2) {
+  transform: translateX(5px);
+}
+
+/* Animation for when hamburger button clicked */
+#hamburger-toggle:checked + div > label > span:nth-child(1) {
+  transform: translate(2px, -6px) rotate(45deg);
+}
+#hamburger-toggle:checked + div > label > span:nth-child(2) {
+  transform: translate(0px, 7px) rotate(-45deg);
+}
+
+#hamburger-toggle:checked ~ .flex-hamburger-menu {
+  order: 5;
+  height: 6rem;
+  opacity: 1;
+}
+
+/* Menu button appearance */
+.flex-hamburger-menu a,
+.menu a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+/* Settings when width is larger than 768 pixels */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .flex-hamburger {
+    display: none;
+  }
+  .flex-hamburger-menu {
+    display: none;
+  }
+  #hamburger-toggle:checked ~ .flex-hamburger-menu {
+    display: none;
+  }
+  .flex-menu {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+  }
+  .flex-logo {
+    flex: 1 1 25%;
+    justify-content: flex-start;
+  }
+  .flex-nav-placeholder {
+    flex: 1 1 25%;
+  }
+}
