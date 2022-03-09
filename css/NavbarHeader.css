@@ -1,12 +1,3 @@
-/* header {
-  height: auto;
-  width: 1vw;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-
-  border-bottom: 3px solid var(--primary);
-} */
 header {
   /* Keep at top of screen */
   position: sticky;
