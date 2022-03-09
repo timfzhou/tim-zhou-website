@@ -1,7 +1,7 @@
 header {
   /* Keep at top of screen */
-  position: sticky;
   position: -webkit-sticky;
+  position: sticky;
   top: 0;
 
   /* Always at the front of content */
