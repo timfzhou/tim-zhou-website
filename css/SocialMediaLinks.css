@@ -1,5 +1,7 @@
 /* Social media links */
 #social-media-flex-container {
+  padding: 8px;
+
   display: flex;
 }
 #social-media-placeholder {

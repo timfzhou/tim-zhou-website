@@ -1,13 +1,33 @@
-nav {
+/* header {
+  height: auto;
+  width: 1vw;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+
+  border-bottom: 3px solid var(--primary);
+} */
+header {
+  /* Keep at top of screen */
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+
+  /* Always at the front of content */
+  z-index: 99;
+
+  /* Formatting */
   background-color: var(--dark);
   /* Top & bottom / Left & right */
   padding: 16px 32px;
+  border-bottom: 3px solid var(--primary);
 }
 
 /* Flexbox in header */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  align-self: flex-start;
 }
 
 /* Sections of flexbox container in header. Settings for small width screens */
@@ -25,6 +45,7 @@ nav {
   justify-content: center;
   user-select: none;
   order: 2;
+  font-size: 1.25rem;
 }
 .flex-menu {
   display: none;
@@ -43,7 +64,6 @@ nav {
   align-content: stretch;
   align-items: center;
   justify-content: space-evenly;
-  overflow: hidden;
   height: 0;
   opacity: 0;
 
