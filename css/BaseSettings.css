@@ -13,3 +13,10 @@
   box-sizing: border-box;
   font-family: "Fira sans", sans-serif;
 }
+
+p {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
