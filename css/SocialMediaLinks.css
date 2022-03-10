@@ -1,6 +1,6 @@
 /* Social media links */
 #social-media-flex-container {
-  padding: 8px;
+  padding: 16px;
 
   display: flex;
 }
@@ -14,6 +14,7 @@
   flex-basis: 100%;
 }
 /* instagram logo */
+/* Main border for instagram logo */
 .instagram {
   width: 2rem;
   height: 2rem;
@@ -23,6 +24,7 @@
   place-items: center;
   position: relative;
 }
+/* Central circle in instagram logo */
 .instagram::before {
   content: "";
   width: 0.5rem;
@@ -31,6 +33,7 @@
   border-radius: 50%;
   position: absolute;
 }
+/* Top right "flash" in instagram logo */
 .instagram::after {
   content: "";
   width: 0.1rem;
