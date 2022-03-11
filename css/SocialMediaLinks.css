@@ -47,10 +47,6 @@
   top: 0.12rem;
   right: 0.12rem;
 }
-/* Increase size of link when hovered over */
-.instagram:hover {
-  transform: scale(1.35);
-}
 
 /* twitter logo; source: https://codepen.io/moneyandspoils/pen/DwKyEr by Armando Lopez*/
 .twitter {
@@ -152,10 +148,6 @@
   top: 2.603636364rem;
   left: 3.585454545rem;
 }
-/* Increase size of link when hovered over */
-.twitter:hover {
-  transform: scale(1.35);
-}
 
 /* Linkedin Logo */
 @import url("https://use.typekit.net/ksb1yui.css");
@@ -182,10 +174,6 @@
   position: absolute;
   left: 0.12rem;
 }
-/* Increase size of link when hovered over */
-.linkedin:hover {
-  transform: scale(1.35);
-}
 
 @media (min-width: 768px) {
   #social-media {
@@ -202,5 +190,18 @@
   .instagram,
   .linkedin {
     justify-self: flex-end;
+  }
+}
+
+@media (hover: hover) {
+  /* Increase size of link when hovered over */
+  .instagram:hover {
+    transform: scale(1.35);
+  }
+  .twitter:hover {
+    transform: scale(1.35);
+  }
+  .linkedin:hover {
+    transform: scale(1.35);
   }
 }
