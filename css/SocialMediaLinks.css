@@ -23,6 +23,8 @@
   display: grid;
   place-items: center;
   position: relative;
+
+  transition: 0.4s;
 }
 /* Central circle in instagram logo */
 .instagram::before {
@@ -45,12 +47,18 @@
   top: 0.12rem;
   right: 0.12rem;
 }
+/* Increase size of link when hovered over */
+.instagram:hover {
+  transform: scale(1.35);
+}
 
 /* twitter logo; source: https://codepen.io/moneyandspoils/pen/DwKyEr by Armando Lopez*/
 .twitter {
   width: 2.509090909rem;
   height: 2rem;
   overflow: hidden;
+
+  transition: 0.4s;
 }
 
 .twitter-bird {
@@ -144,6 +152,10 @@
   top: 2.603636364rem;
   left: 3.585454545rem;
 }
+/* Increase size of link when hovered over */
+.twitter:hover {
+  transform: scale(1.35);
+}
 
 /* Linkedin Logo */
 @import url("https://use.typekit.net/ksb1yui.css");
@@ -157,6 +169,8 @@
   display: flex;
   align-content: center;
   align-items: center;
+
+  transition: 0.4s;
 }
 .linkedin::before {
   content: "in";
@@ -167,6 +181,10 @@
   text-decoration: none;
   position: absolute;
   left: 0.12rem;
+}
+/* Increase size of link when hovered over */
+.linkedin:hover {
+  transform: scale(1.35);
 }
 
 @media (min-width: 768px) {
