@@ -1,6 +1,6 @@
 #corporate-headshot-container {
   display: flex;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   padding: 16px;
 }
