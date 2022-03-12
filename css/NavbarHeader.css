@@ -113,7 +113,7 @@ header {
 
 #hamburger-toggle:checked ~ .flex-hamburger-menu {
   order: 5;
-  height: 6rem;
+  height: 8rem;
   opacity: 1;
 }
 
