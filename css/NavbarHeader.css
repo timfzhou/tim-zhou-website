@@ -60,6 +60,7 @@ header {
   justify-content: space-evenly;
   height: 0;
   opacity: 0;
+  overflow: hidden;
 
   /* Make the transition smooth on Safari iOS by hardware-acceleration*/
   transform: translate3d(0, 0, 0);

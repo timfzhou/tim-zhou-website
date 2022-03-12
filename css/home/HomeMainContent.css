@@ -15,10 +15,13 @@
 
 #title-text {
   position: relative;
-  top: -24vh;
+  height: 0;
+  top: -25vh;
   user-select: none;
   color: var(--light);
   font-size: 2.5rem;
+  font-weight: 500;
+  overflow: visible;
 }
 
 p {
