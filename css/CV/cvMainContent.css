@@ -1,8 +1,27 @@
+.download-link-container {
+  padding-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  justify-content: center;
+}
+.download-link {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #1f5cf4;
+  color: var(--light);
+  border-radius: 1rem;
+}
+.download-link:hover {
+  background-color: #7a9df2;
+  color: var(--light);
+}
 #corporate-headshot-container {
   display: flex;
   width: 100vw;
   justify-content: center;
-  padding: 16px;
+  padding-top: 16px;
 }
 
 #corporate-headshot {
@@ -13,13 +32,126 @@
   border-radius: 50%;
 }
 #cv-resume {
+  display: flex;
+  flex-direction: column;
   padding-left: 32px;
   padding-right: 32px;
+  padding-bottom: 32px;
+}
+#clearwater-logo {
+  width: 15rem;
+  align-self: center;
+  padding-bottom: 0.5rem;
 }
 #cnooc-logo {
   width: 15rem;
+  align-self: center;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+#all-saints-logo {
+  width: 15rem;
+  align-self: center;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+#uni-of-edi-logo {
+  width: 7.2rem;
+  align-self: center;
+  padding-bottom: 0.5rem;
+}
+#robert-gordons-logo {
+  width: 5.5rem;
+  align-self: center;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+h2 {
+  font-size: 1.6rem;
+  align-self: center;
+}
+.cv-section-title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+}
+ul {
+  padding-left: 3rem;
+}
+li {
+  padding-top: 2px;
 }
 
-#clearwater-logo {
-  width: 15rem;
+@media (min-width: 768px) {
+  #cv-resume {
+    display: grid;
+    grid-template:
+      "experience-break experience-break" auto
+      "clearwater-logo clearwater-content" auto
+      ". ." 1.5rem
+      "cnooc-logo cnooc-content" auto
+      ". ." 1.5rem
+      "allsaints-logo allsaints-content" auto
+      "education-break education-break"
+      "ediuni-logo ediuni-content" auto
+      "rgc-logo rgc-content" auto
+      "skills-break skills-break"
+      ". skills-interests" auto
+      / 40% 60%;
+    padding-left: 0px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+  }
+  #experience-break {
+    grid-area: experience-break;
+    justify-self: center;
+  }
+  #clearwater-logo {
+    grid-area: clearwater-logo;
+    justify-self: center;
+  }
+  #clearwater-content {
+    grid-area: clearwater-content;
+  }
+  #cnooc-logo {
+    grid-area: cnooc-logo;
+    justify-self: center;
+  }
+  #cnooc-content {
+    grid-area: cnooc-content;
+  }
+  #all-saints-logo {
+    grid-area: allsaints-logo;
+    justify-self: center;
+  }
+  #allsaints-content {
+    grid-area: allsaints-content;
+  }
+  #education-break {
+    grid-area: education-break;
+    justify-self: center;
+  }
+  #uni-of-edi-logo {
+    grid-area: ediuni-logo;
+    justify-self: center;
+  }
+  #ediuni-content {
+    grid-area: ediuni-content;
+    align-self: center;
+  }
+  #robert-gordons-logo {
+    grid-area: rgc-logo;
+    justify-self: center;
+  }
+  #rgc-content {
+    grid-area: rgc-content;
+    align-self: center;
+  }
+  #skills-break {
+    grid-area: skills-break;
+    justify-self: center;
+  }
+  #skills-interests {
+    grid-area: skills-interests;
+  }
 }

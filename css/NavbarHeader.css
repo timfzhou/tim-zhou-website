@@ -66,8 +66,8 @@ header {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
 
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
+  -webkit-transition: 0.38s;
+  transition: 0.38s;
 }
 
 /* Navigation on small width screens */
