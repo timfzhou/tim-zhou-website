@@ -19,5 +19,8 @@ p {
   padding-bottom: 8px;
   padding-left: 32px;
   padding-right: 32px;
+}
+
+main {
   font-weight: 300;
 }
