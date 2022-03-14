@@ -12,6 +12,7 @@
   background-color: #1f5cf4;
   color: var(--light);
   border-radius: 1rem;
+  text-align: center;
 }
 .download-link:hover {
   background-color: #7a9df2;

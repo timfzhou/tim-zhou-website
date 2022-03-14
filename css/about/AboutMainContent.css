@@ -2,7 +2,7 @@
   display: flex;
   width: 100vw;
   justify-content: center;
-  padding: 16px;
+  padding-top: 16px;
 }
 
 #tim-waffle-photo {
@@ -16,14 +16,28 @@
 #main-content {
   display: flex;
   flex-direction: column;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 32px;
-  align-items: center;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  align-items: flex-start;
 }
 
 p {
   margin-bottom: 1.5rem;
   text-align: justify;
-  width: 26rem;
+  width: 80vw;
+}
+
+h2 {
+  align-self: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* Settings when width is larger than 768 pixels (when standard rem - 16px used)*/
+@media (min-width: 48rem) {
+  #main-content {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
 }
