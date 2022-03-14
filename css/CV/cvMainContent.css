@@ -26,9 +26,9 @@
 
 #corporate-headshot {
   object-fit: cover;
-  object-position: 0px -3.5rem;
-  width: 20rem;
-  height: 20rem;
+  object-position: 0px -5.5vh;
+  width: 40vh;
+  height: 40vh;
   border-radius: 50%;
 }
 #cv-resume {
@@ -82,24 +82,25 @@ li {
   padding-top: 2px;
 }
 
-@media (min-width: 768px) {
+/* Settings when width is larger than 768 pixels (when standard rem - 16px used)*/
+@media (min-width: 48rem) {
   #cv-resume {
     display: grid;
     grid-template:
-      "experience-break experience-break" auto
-      "clearwater-logo clearwater-content" auto
-      ". ." 1.5rem
-      "cnooc-logo cnooc-content" auto
-      ". ." 1.5rem
-      "allsaints-logo allsaints-content" auto
-      "education-break education-break"
-      "ediuni-logo ediuni-content" auto
-      "rgc-logo rgc-content" auto
-      "skills-break skills-break"
-      ". skills-interests" auto
-      / 40% 60%;
-    padding-left: 0px;
-    padding-right: 32px;
+      "experience-break experience-break experience-break" auto
+      "clearwater-logo . clearwater-content" auto
+      ". . ." 1.5rem
+      "cnooc-logo . cnooc-content" auto
+      ". . ." 1.5rem
+      "allsaints-logo . allsaints-content" auto
+      "education-break education-break education-break"
+      "ediuni-logo . ediuni-content" auto
+      "rgc-logo . rgc-content" auto
+      "skills-break skills-break skills-break"
+      ". . skills-interests" auto
+      / 15rem 48px 1fr;
+    padding-left: 10vw;
+    padding-right: 10vw;
     padding-bottom: 32px;
   }
   #experience-break {

@@ -175,22 +175,23 @@
   left: 0.12rem;
 }
 
-@media (min-width: 768px) {
+/* Settings when width is larger than 768 pixels (when standard rem - 16px used)*/
+@media (min-width: 48rem) {
   #social-media {
-    flex-basis: 30%;
+    flex-basis: 80vw;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     column-gap: 3rem;
   }
   #social-media-placeholder {
-    flex-basis: 70%;
+    flex-basis: 10vw;
     display: block;
   }
-  .twitter,
+  /* .twitter,
   .instagram,
   .linkedin {
     justify-self: flex-end;
-  }
+  } */
 }
 
 @media (hover: hover) {
