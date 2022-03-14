@@ -1,5 +1,5 @@
 # Enable the rewrite engine
-#RewriteEngine on
+RewriteEngine on
 
 # Prevent Hotlinking
 #RewriteCond %{HTTP_REFERER} !^$
@@ -8,10 +8,10 @@
 
 # Remove html file extension from webpages
 # RewriteEngine On (Only need to specify this once - above)
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteRule ^([^/]+)/$ $1.html
-#RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
-#RewriteRule (.*)$ /$1/ [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/$ $1.html
+RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+RewriteRule (.*)$ /$1/ [R=301,L]
