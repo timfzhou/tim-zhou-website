@@ -1,10 +1,10 @@
 # Enable the rewrite engine
-RewriteEngine on
+#RewriteEngine on
 
 # Prevent Hotlinking
-RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^http://(www\.)timmyzhou.com/.*$ [NC]
-RewriteRule \.(gif|jpg|jpeg|bmp|zip|rar|mp3|flv|swf|xml|php|png|css|pdf|html|docx)$ - [F]
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteCond %{HTTP_REFERER} !^http://(www\.)timmyzhou.com/.*$ [NC]
+#RewriteRule \.(gif|jpg|jpeg|bmp|zip|rar|mp3|flv|swf|xml|php|png|css|pdf|html|docx)$ - [F]
 
 # Remove html file extension from webpages
 # RewriteEngine On (Only need to specify this once - above)
