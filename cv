@@ -26,8 +26,8 @@
       <!-- Drop down menu when nav is clicked on small width screen -->
       <nav class="flex-hamburger-menu">
         <a href="/">Home</a>
-        <a href="about.html">About</a>
-        <a href="cv.html">CV</a>
+        <a href="about">About</a>
+        <a href="cv">CV</a>
       </nav>
   
       <!-- (Placeholder for logo) & Name (personal website) -->
@@ -39,8 +39,8 @@
       <!-- Menu for larger width screen -->
       <nav class="menu flex-menu">
         <a href="/">Home</a>
-        <a href="about.html">About</a>
-        <a href="cv.html">CV</a>
+        <a href="about">About</a>
+        <a href="cv">CV</a>
       </nav>
   
       <div class="flex-nav-placeholder"></div>
