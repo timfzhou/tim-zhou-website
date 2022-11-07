@@ -59,15 +59,31 @@
 
     <article id="cv-resume">
       <h2 class="cv-section-title" id="experience-break">Experience</h2>
+
+      <img src="images/LCPDelta-logo.png" alt="LCP Delta Logo" id="LCPDelta-logo">
+      <div id="LCPDelta-content">
+        <h3><a href="https://lcpdelta.com/">LCP Delta</a></h3>
+        <em>Analyst, Connected Home Service and Energy Insights+ Service (June 2022 - Present)</em>
+        <p><em>Edinburgh, Scotland</em></p>
+        <ul>
+          <li>Planned and wrote reports to achieve a monthly deliverable for the connected home and energy insights+ subscription services.</li>
+          <li>Conducted research calls with key industry players to understand the market size and strategic challenges of energy suppliers, HVACs, and controls companies.</li>
+          <li>Carried out desk-based research on the market landscape for customer engagement platforms, electric heating systems and controls.</li>
+          <li>Managed competing obligations of deliverables across two research services as well as consultancy projects as and when required.</li>
+        </ul>
+      </div>
+
+
       <img src="images/clearwater-analytics-logo.png" alt="Clearwater Analytics Logo" id="clearwater-logo">
       <div id="clearwater-content">
         <h3><a href="https://clearwateranalytics.com/">Clearwater Analytics</a></h3>
-        <em>Implementation Analyst, Global Delivery (June 2021 - Present)</em>
+        <em>Implementation Analyst, Global Delivery (June 2021 - May 2022)</em>
         <p><em>Edinburgh, Scotland</em></p>
         <ul>
-        <li>Led calls with insurance and asset management clients to ensure they were implemented onto the Clearwater platform successfully.</li>
-        <li>Reconciled clients' accounts ensuring data from multiple sources reconciled and multiple asset types (derivatives, bonds and equities) were accurately modelled.</li>
-        <li>Collaborated with multiple departments through Jira to ensure clients’ holdings and general ledger journal entries were correct on the Clearwater platform.</li>
+        <li>Led calls with insurance and asset management clients to ensure smooth and successful transition from their legacy system onto the Clearwater platform.</li>
+        <li>Reconciled clients’ accounts ensuring multiple asset classes (derivatives, bonds and equities) were accurately modelled; discrepancies were investigated to either be fixed or provide an explanation that the client was satisfied with and signed-off.</li>
+        <li>Collaborated with multiple departments through Jira to ensure clients’ holdings and general ledger entries were accurate on the Clearwater platform. This is based on accounting standards in addition to custodian, asset manager, and third party data.</li>
+        <li>Achieved an award for execution for “delivering against yearly targets and closing out projects no matter the expectations or challenges faced”.</li>
         </ul>
       </div>
       
@@ -124,7 +140,7 @@
       <h2 class="cv-section-title" id="skills-break">Skills & Interests</h2>
       <div id="skills-interests">
         <p><strong>Technical:</strong> Microsoft Office Suite (Word, Excel, PowerPoint, Visio), SQL, Aspen Hysys, MATLAB, AutoCAD, GCMe, Jira, HTML & CSS, Git & GitHub, JavaScript Fundamentals.</p>
-        <p><strong>Interests:</strong> Rugby, Boxing, Weightlifting, Photography, Traditional Chinese Medicine.</p>
+        <p><strong>Interests:</strong> Rugby, Boxing, CrossFit, Yoga, Photography</p>
       </div>
 
     </article>

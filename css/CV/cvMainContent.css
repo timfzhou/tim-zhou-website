@@ -39,6 +39,11 @@
   padding-right: 32px;
   padding-bottom: 32px;
 }
+#LCPDelta-logo {
+  width: 15rem;
+  align-self: center;
+  padding-bottom: 0.5rem;
+}
 #clearwater-logo {
   width: 15rem;
   align-self: center;
@@ -89,6 +94,7 @@ li {
     display: grid;
     grid-template:
       "experience-break experience-break experience-break" auto
+      "LCPDelta-logo . LCPDelta-content" auto
       "clearwater-logo . clearwater-content" auto
       ". . ." 1.5rem
       "cnooc-logo . cnooc-content" auto
@@ -107,6 +113,13 @@ li {
   #experience-break {
     grid-area: experience-break;
     justify-self: center;
+  }
+  #LCPDelta-logo {
+    grid-area: LCPDelta-logo;
+    justify-self: center;
+  }
+  #LCPDelta-content {
+    grid-area: LCPDelta-content;
   }
   #clearwater-logo {
     grid-area: clearwater-logo;
