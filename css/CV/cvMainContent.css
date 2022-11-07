@@ -95,6 +95,7 @@ li {
     grid-template:
       "experience-break experience-break experience-break" auto
       "LCPDelta-logo . LCPDelta-content" auto
+      ". . ." 1.5rem
       "clearwater-logo . clearwater-content" auto
       ". . ." 1.5rem
       "cnooc-logo . cnooc-content" auto
